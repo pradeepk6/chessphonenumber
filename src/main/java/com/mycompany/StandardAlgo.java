@@ -9,7 +9,7 @@ public class StandardAlgo implements PossibleMovesGenerator {
     private List<Integer> positionList;
     private int depth;
 
-    public StandardAlgo(Piece piece, List<Integer> positionList, int depth){
+    public StandardAlgo(Piece piece, List<Integer> positionList, int depth) {
         this.piece = piece;
         this.positionList = positionList;
         this.depth = depth;

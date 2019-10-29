@@ -33,17 +33,17 @@ public class Pawn extends Piece {
 
     public int[][] getMoveRules(int currPos) {
         int[][] mRules;
-        if(isBecameQueen()) {
+        if (isBecameQueen()) {
             mRules = queenRules;
-        }else {
-            if(currPos == 0) {
+        } else {
+            if (currPos == 0) {
                 mRules = moveRulesAtBottomRow;
-            } else if(currPos>0 && currPos<4) {
+            } else if (currPos > 0 && currPos < 4) {
                 mRules = queenRules;
                 setQueenMoveRules(true);
             } else mRules = moveRules;
         }
-       // System.out.println("currPos = " + currPos + mRules.length);
+        // System.out.println("currPos = " + currPos + mRules.length);
         return mRules;
     }
 }

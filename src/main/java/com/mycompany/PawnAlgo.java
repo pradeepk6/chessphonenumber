@@ -3,13 +3,13 @@ package com.mycompany;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PawnAlgo implements PossibleMovesGenerator  {
+public class PawnAlgo implements PossibleMovesGenerator {
 
     private Pawn piece;
     private List<Integer> positionList;
     private int depth;
 
-    public PawnAlgo(Pawn piece, List<Integer> positionList, int depth){
+    public PawnAlgo(Pawn piece, List<Integer> positionList, int depth) {
         this.piece = piece;
         this.positionList = positionList;
         this.depth = depth;
